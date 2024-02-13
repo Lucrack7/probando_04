@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="img/jpn" href="https://png.pngtree.com/png-clipart/20230427/original/pngtree-3-star-png-image_9112613.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>MB--2024--riBer</title>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="icon" type="image/jpg" href="icono.png">
+</head>
+
+<body onclick="PlayAudio()">
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce="TYNc9qNV"></script>
+
+
+	<!-- seccion de INICIO -->
+	<section id="inicio" class="inicio">
+
+			<div class="portada" id="portada">
+				<div class="header" id="contenidoPrincipal">
+						<h5 class="logotipo">SHOW DE MARIA BECERRA --- riBer ---- 22/03/24</h5>
+						<h2 class="logotipo" id="tituloResponsive">LNDA riber <br>-------- <br>22/03/24</h2>
+				</div>
+				<div id="cuenta">
+				</div>
+			</div>
+
+			<ul class="home-social">
+                <li>
+                    <a href="https://www.linkedin.com/in/lucas-medran-b676b0249/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lucrack10/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/qr/KBRQD5C4UYMZN1"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-regular fa-envelope"></i></a>
+                </li>
+            </ul>
+
+
+			<div class="slider-container" id="imagenFondo">
+				<div class="slider position"></div>
+			</div>
+		
+			<audio id="audio1" loop>
+				<source src="audio/la-nena-de-argentina-instrumental-karaoke.mp3" type="audio/mpeg">
+			</audio>                                       
+		
+			<script>
+				function PlayAudio(){
+					document.getElementById('audio1').play();
+				}
+			</script>
+	</section>
+
+	<div class="ctn-lbl-comentar">
+		<label class="lbl-comentar">COMENTARIOS</label>
+		<div class="fb-comments" data-href="https://lucrack7.github.io/cuenta-reg-MB22/" data-width="100%" data-numposts="3"></div>
+	</div>
+
+	<footer>
+        <p>Creado por Lucrack10 --- 2023</p>
+    </footer>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/simplyCountdown.min.js"></script>
+	<script src="js/countdown.js"></script>
+</body>
+
+</html>

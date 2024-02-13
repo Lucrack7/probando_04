@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f6fafc;
+}
+
+/* SECCION DE INICIO */
+.inicio{
+    background:linear-gradient(#2B00D3, #9400D3);
+	height: 170vh;
+    padding: 0 20px; 
+}
+
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* ? ----- PORTADA ----- */
+.portada {
+	position: absolute;
+	top: 680px;
+	left: 0px;
+	right: 115px;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+}
+
+.logotipo {
+	position: relative;
+	left: 40px;
+	top: -800px;
+	right: 100px;
+	bottom: 380px;
+	color: #D39400;
+}
+
+
+#tituloResponsive{
+	font-size: 0%;
+}
+
+
+.portada .header {
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.portada .header .logotipo {
+	font-size: 50px;
+	font-size: 900;
+	margin-bottom: 20px;
+}
+
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	margin-bottom: 100px;
+	position: relative;
+	top: 50%;
+}
+
+.simply-section {
+	background: linear-gradient(#D300A8, #9400D3);
+	width: 150px;
+	height: 150px;
+	margin: 0 40px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+
+
+.simply-section:hover {
+	background: linear-gradient(#35032b, #d30097);
+}
+
+
+.simply-amount {
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+	color: rgb(248, 244, 244);
+}
+
+
+.simply-amount:hover {
+	color: #D3003F;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.simply-word:hover{
+	color: #00D394;
+}
+
+/* ? ----- REDES SOCIALES ----- */
+a {
+	text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ul.home-social{
+    position: absolute;
+    right: 10px;
+    top: 230px;
+}
+
+ul.home-social li a i{
+    padding: 8px;
+    background: #b8b6b664;
+    color: #00D394;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+ul.home-social li a:hover i{
+    color: #A8D300;
+    background: #D3003F;
+}
+
+
+
+/* slide -show img */
+.position {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slider {
+	background-image: url(foto_01.png);
+	background-size: cover;
+	height: 50%;
+	width: 50%;
+	border-radius: 10px;
+	animation: cambio 30s infinite;	
+}
+
+
+
+@keyframes cambio {
+	0% {
+		background-image: url(foto_01.png);
+		background-size: cover;
+	}
+
+	10% {
+		background-image: url(foto_02.jpg);
+		background-size: cover;
+	}
+
+	15% {
+		background-image: url(foto_03.jpg);
+		background-size: cover;
+	}
+
+	20% {
+		background-image: url(foto_04.jpg);
+		background-size: cover;
+	}
+
+	25% {
+		background-image: url(foto_05.jpg);
+		background-size: cover;
+	}
+
+	30% {
+		background-image: url(foto_06.jpeg);
+		background-size: cover;
+	}
+
+	40% {
+		background-image: url(foto_07.jpg);
+		background-size: cover;
+	}
+
+	45% {
+		background-image: url(foto_13.jpg);
+		background-size: cover;
+	}
+	50% {
+		background-image: url(foto_15.jpg);
+		background-size: cover;
+	}
+	60% {
+		background-image: url(foto_16.jpg);
+		background-size: cover;
+	}
+	65% {
+		background-image: url(foto_17.jpg);
+		background-size: cover;
+	}
+	70% {
+		background-image: url(foto_18.jpg);
+		background-size: cover;
+	}
+	75% {
+		background-image: url(foto_20.jpg);
+		background-size: cover;
+	}
+	80% {
+		background-image: url(foto_21.jpg);
+		background-size: cover;
+	}
+	90% {
+		background-image: url(foto_22.png);
+		background-size: cover;
+	}
+	
+} 
+
+
+ /* comentarios */
+
+.ctn-lbl-comentar{
+	width: 100%;
+	text-align: center;
+}
+
+.lbl-comentar{
+	font-family: cursive;
+	font-size: 20px;
+	text-shadow: 1px 2px 1px  #2f14ff;
+}
+
+
+
+/* codigo para que sea adaptable a cualquier tipo de pantalla */
+
+/* Pantallas pequeñas (portrait) */
+@media only screen and (max-width: 480px) {
+
+	/* Portada */
+	.portada {
+		top: 30px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.logotipo {
+		font-size: 0% !important;
+	}
+
+	#tituloResponsive{
+		font-size: 150% !important;
+		margin-top: 750%;
+		margin-left: -20%;
+		color: #D39400;
+		text-align: center;
+	}
+
+
+	/* Redes sociales */
+	.home-social{
+		margin-top: 120%;
+		margin-right: 7%;
+	}
+
+
+	/* Slider */
+	.slider {
+		height: 30%;
+		width: 90%;
+		border-radius: 5px;
+		margin-top: 30%;
+	}
+
+	/* cuenta */
+	#cuenta {
+		margin-top: 50%;
+		margin-left: -20%;
+		position: absolute;
+		display: block;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		font-size: 10%;
+		text-align: center;
+	}
+
+	.simply-section {
+		background: linear-gradient(#D300A8, #9400D3);
+		width: 95px;
+		height: 90px;
+		margin: 25px 0;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.9;
+	}
+
+	.simply-amount {
+		display: block;
+		font-size: 10ex;
+		font-weight: 700;
+		color: rgb(248, 244, 244);
+	}
+
+	.simply-word {
+		font-weight: 300;
+		font-size: 5ex;
+		color: #ffffff;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+}
+
+/* Pantallas pequeñas (landscape) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	/* Portada */
+	.portada {
+		top: 120%;
+		left: -10%;
+		right: 0px;
+		bottom: 0px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.logotipo {
+		font-size: 120% !important;
+		margin-bottom: 2px;
+		color: #D39400;
+		text-align: center;
+		text-align: center;
+	}
+
+	#tituloResponsive{
+		font-size: 0% !important;
+
+	}
+
+
+	/* Redes sociales */
+	.home-social{
+		position: fixed;
+		margin-top: 150%;
+		margin-right: 28%;
+		display: flex;
+	}
+
+	ul.home-social li a i{
+		margin: 8px;
+		
+	}
+
+
+	/* Slider */
+	.slider {
+		height: 50%;
+		width: 95%;
+		border-radius: 5px;
+		margin-top: 20%;
+	}
+
+	/* cuenta */
+	#cuenta {
+		margin-top: -40%;
+		margin-left: 10%;
+		position: absolute;
+		display: flex;
+		margin-bottom: 10px;
+		font-size: 10%;
+	}
+
+	.simply-section {
+		background: linear-gradient(#D300A8, #9400D3);
+		width: 85px;
+		height: 90px;
+		margin: 0 20px;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.9;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	.simply-amount {
+		display: block;
+		font-size: 10ex;
+		font-weight: 700;
+		color: rgb(248, 244, 244);
+	}
+
+	.simply-word {
+		font-weight: 300;
+		font-size: 5ex;
+		color: #ffffff;
+	}
+}
+
+
+
+
+/* Pantallas medianas (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	/* Portada */
+	.portada {
+		top: 120%;
+		left: -10%;
+		right: 0px;
+		bottom: 0px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.logotipo {
+		font-size: 120% !important;
+		margin-bottom: 2px;
+		color: #D39400;
+		text-align: center;
+		text-align: center;
+	}
+
+	#tituloResponsive{
+		font-size: 0% !important;
+
+	}
+
+
+	/* Redes sociales */
+	.home-social{
+		position: fixed;
+		margin-top: 90%;
+		margin-right: 38%;
+		display: flex;
+	}
+
+	ul.home-social li a i{
+		margin: 8px;
+		
+	}
+
+
+	/* Slider */
+	.slider {
+		height: 50%;
+		width: 95%;
+		border-radius: 5px;
+		margin-top: 20%;
+	}
+
+	/* cuenta */
+	#cuenta {
+		margin-top: -10%;
+		margin-left: 10%;
+		position: absolute;
+		display: flex;
+		margin-bottom: 10px;
+		font-size: 10%;
+	}
+
+	.simply-section {
+		background: linear-gradient(#D300A8, #9400D3);
+		width: 85px;
+		height: 90px;
+		margin: 0 20px;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.9;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	.simply-amount {
+		display: block;
+		font-size: 10ex;
+		font-weight: 700;
+		color: rgb(248, 244, 244);
+	}
+
+	.simply-word {
+		font-weight: 300;
+		font-size: 5ex;
+		color: #ffffff;
+	}
+}
